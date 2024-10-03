@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foody</title>
+    <link rel="icon" href="web_icon.jpeg" type="image/png">
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Foody</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <button class="sign-up">Sign Up</button>
+            <button class="sign-up1">Log-in </button>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>it’s not just Food, It’s an Experience.</h1>
+            <div class="hero-buttons">
+                <button class="view-menu">View Menu</button>
+                <button class="book-table">Book A Table</button>
+            </div>
+        </div>
+        <div class="dish-image">
+            <img src="./Images/pexels-chanwalrus-958545.jpg" alt="Dish Image">
+        </div>
+    </section>
+
+    <section class="menu-items">
+        <div class="food-card">
+            <img src="./Images/download (1).jpeg" alt="Pappardelle">
+            <h3>Pappardelle</h3>
+            <p>With Vegetable</p>
+            <p class="price">$35.00</p>
+            <button class="cart-btn">Add to Cart</button>
+        </div>
+
+        <div class="food-card">
+            <img src="./Images/download (1).jpeg" alt="Ravioli">
+            <h3>Ravioli Stuffed</h3>
+            <p>With Pesto Sauce</p>
+            <p class="price">$42.00</p>
+            <button class="cart-btn">Add to Cart</button>
+        </div>
+
+        <div class="food-card">
+            <img src="./Images/Sandwich.jpeg" alt="Pappardelle">
+            <h3>Sandwich</h3>
+            <p>With Vegetable</p>
+            <p class="price">$56.00</p>
+            <button class="cart-btn">Add to Cart</button>
+        </div>
+
+        <div class="food-card">
+            <img src="./Images/bugers.jpeg" alt="Ravioli">
+            <h3>Bugers Stuffed</h3>
+            <p>With Pesto Sauce</p>
+            <p class="price">$23.00</p>
+            <button class="cart-btn">Add to Cart</button>
+        </div>
+    </section>
+
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>Foody</h3>
+                <p>Foody is not just food, it's an experience. We bring you the best dishes made with love and care. Enjoy fresh and delicious meals delivered right to your doorstep.</p>
+            </div>
+    
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>1234 Delicious Ave, Food City, FC 56789</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Email: contact@foody.com</p>
+            </div>
+    
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><img src="./Images/FB.jpeg" alt="Facebook"></a>
+                    <a href="#"><img src="./Images/titter.jpeg" alt="Twitter"></a>
+                    <a href="#"><img src="./Images/insta.jpeg" alt="Instagram"></a>
+                    <a href="#"><img src="./Images/th (1).jpeg " alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-copyright">
+        <p>&copy; 2024 Foody. All rights reserved.</p>
+    </div>
+    
+    
+
+    <!-- Chat Icon -->
+    <div class="chat-icon" onclick="toggleChat()">
+        <img src="./Images/images.png" alt="Chat Icon">
+    </div>
+
+    <!-- Chatbot Section -->
+    <div class="chatbot-container" id="chatbotContainer">
+        <div class="chatbot-header">
+            <span>Chat with Us!</span>
+            <button class="close-chat" onclick="toggleChat()">X</button>
+        </div>
+        <iframe
+            allow="microphone;"
+            width="300"
+            height="400"
+            src="https://console.dialogflow.com/api-client/demo/embedded/ee25edc9-7903-4b15-8383-66b1823540bd">
+        </iframe>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

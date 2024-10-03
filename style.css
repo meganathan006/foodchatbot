@@ -1,0 +1,349 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    
+}
+
+header {
+    width: 100%;
+    padding: 1em 5%;
+    background:blanchedalmond;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #d90429;
+    margin-right: 150px;
+}
+nav{
+    display: flex;
+    gap: 30px;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    
+}
+.nav-links li{
+    font-size:large;
+    font-weight: bolder;
+   
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500; 
+}
+
+.sign-up {
+    background: #d90429;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1.5em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 250px;
+}
+.sign-up1 {
+    background:black;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1.5em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.hero {
+    text-align: center;
+    padding: 5% 10%;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    font-weight: 700;
+    color: #333;
+}
+
+.hero-buttons {
+    margin-top: 20px;
+}
+
+.hero-buttons .view-menu,
+.hero-buttons .book-table {
+    border: none;
+    padding: 0.7em 2em;
+    margin: 0 10px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.view-menu {
+    background: #d90429;
+    color: #fff;
+}
+
+.book-table {
+    background: #fff;
+    color: #333;
+    border: 2px solid #d90429;
+}
+
+.dish-image img {
+    max-width: 400px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.menu-items {
+    display: flex;
+    justify-content: space-around;
+    padding: 3% 10%;
+    background: #fff;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.food-card {
+    text-align: center;
+    background: #f9f9f9;
+    padding: 1.5em;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.food-card img {
+    width: 150px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.food-card h3 {
+    font-size: 24px;
+    margin: 15px 0 5px;
+}
+
+.food-card p {
+    color: #777;
+}
+
+.food-card .price {
+    font-size: 20px;
+    color: #333;
+}
+
+.cart-btn {
+    background: #d90429;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1.5em;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.chatbot-section {
+    text-align: center;
+    padding: 3% 10%;
+    background-color: #f0f0f0;
+    margin-top: 20px;
+}
+
+.chatbot-container {
+    background: #fff;
+    padding: 2em;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    display: inline-block;
+}
+
+.chatbot-container h2 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #333;
+}
+
+
+.chat-icon {
+    position: fixed;
+    bottom: 50px;
+    right: 40px;
+    /* background-color: #d90429; */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.chat-icon img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    /* padding: 20px; */
+}
+
+
+.chatbot-container {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    width: 330px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    padding: 1em;
+    z-index: 1000;
+}
+
+.chatbot-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.close-chat {
+    background: transparent;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+    color: #d90429;
+}
+
+.footer-section {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 10%;
+    text-align: left;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-about, .footer-links, .footer-contact, .footer-social {
+    flex: 1;
+    min-width: 200px;
+    margin: 20px 0;
+}
+.footer-links{
+    margin-left: 50px;
+}
+
+.footer-about h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.footer-about p {
+    line-height: 1.6;
+    color: #ddd;
+}
+
+.footer-links h4,
+.footer-contact h4,
+.footer-social h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 5px 0;
+}
+
+.footer-links ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #d90429;
+}
+
+.footer-contact p {
+    margin: 5px 0;
+    color: #ddd;
+}
+
+.footer-social .social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-social .social-icons img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+    border-radius: 50px;
+}
+.footer-social{
+    margin-left: 40px;
+}
+
+.footer-social .social-icons a:hover img {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-about, .footer-links, .footer-contact, .footer-social {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+}
+
+.footer-social .social-icons img {
+    width: 40px;  /* Adjust to your preference */
+    height: 40px; /* Adjust to your preference */
+}
+
+.footer-social .social-icons a:hover img {
+    transform: rotate(10deg) scale(1.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.footer-copyright {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #bbb;
+}
